@@ -2,9 +2,9 @@ import math
 
 def calculateStats(numbers):
     
-    if len(numbers) == 0:
+    if len(numbers) < 1:
         return math.nan
-    avg = sum(numbers) / len(numbers) 
+    avg = float(sum(numbers) / len(numbers))
     maximum = max(numbers)
     minimum = min(numbers)
 
