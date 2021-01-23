@@ -9,4 +9,4 @@ def calculateStats(numbers):
     minimum = min(numbers)
 
     dict1 = dict({"avg":avg,"max":maximum,"min":minimum})
-    
+    return dict1
