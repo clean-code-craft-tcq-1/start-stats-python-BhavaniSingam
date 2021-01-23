@@ -1,6 +1,6 @@
 def calculateStats(numbers):
     
-    if numbers is None:
+    if len(numbers) == 0:
         return none
     numbers = [1.5,2,3,4]
     avg = sum(numbers) / len(numbers) 
