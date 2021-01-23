@@ -17,10 +17,10 @@ class StatsTest(unittest.TestCase):
     # Use nan and isnan in https://docs.python.org/3/library/math.html
 
   def test_raise_alerts_when_max_above_threshold(self):
-    emailAlert = EmailAlert()
-    ledAlert = LEDAlert()
+    emailAlert = self.EmailAlert()
+    ledAlert = self.LEDAlert()
     maxThreshold = 10.5
-    statsAlerter = StatsAlerter(maxThreshold, [emailAlert, ledAlert])
+    statsAlerter = self.StatsAlerter(maxThreshold, [emailAlert, ledAlert])
     statsAlerter.checkAndAlert([22.6, 12.5, 3.7])
     self.assertTrue(emailAlert.emailSent)
     self.assertTrue(ledAlert.ledGlows)
