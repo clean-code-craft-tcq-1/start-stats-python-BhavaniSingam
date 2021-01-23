@@ -1,7 +1,7 @@
 def calculateStats(numbers):
     
     if len(numbers) == 0:
-        return none
+        return None
     numbers = [1.5,2,3,4]
     avg = sum(numbers) / len(numbers) 
     maximum = max(numbers)
