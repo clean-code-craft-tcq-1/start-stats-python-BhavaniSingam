@@ -3,7 +3,7 @@ import math
 def calculateStats(numbers):
     
     if len(numbers) < 1:
-        return math.nan
+        return dict.fromkeys(["avg", "max", "min"], math.nan)
     avg = float(sum(numbers) / len(numbers))
     maximum = max(numbers)
     minimum = min(numbers)
